@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+int main(){
+int i,cnt1=0,cnt2=0,len;
+char str[20],str1[10],str2[10];
+
+printf("Enter plain text> ");
+scanf("%s",&str);
+printf("%s",str);
+
+len = strlen(str);
+
+for(i=0; i<len; i++){
+
+    if(i%2 == 0)
+        str1[cnt1++] = str[i];
+    else
+        str2[cnt2++] = str[i];
+
+}
+printf("Cypher Text>  %s %s",str1,str2);
+
+return 0;
+}
+
